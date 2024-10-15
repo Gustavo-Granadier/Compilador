@@ -1,0 +1,13 @@
+[a-zA-Z_][a-zA-Z0-9_]*             // Identificadores (variáveis, nomes de funções, etc.)
+\d+                                // Números inteiros
+\d*\.\d+|\d+\.                     // Números de ponto flutuante 
+[+\-*/%]                           // Operadores aritméticos (+, -, *, /, %)
+(==|!=|>=|<=|>|<)                  // Operadores relacionais (==, !=, >=, <=, >, <)
+(&&|\|\||!)                        // Operadores lógicos (&&, ||, !)
+(\+=|\-=|\*=|/=|=)                 // Operadores de atribuição (+=, -=, *=, /=, =)
+\b(int|float|if|else|while|for|return)\b  // Palavras-chave da linguagem C (int, float, if, else, while, for, return)
+[\(\)\{\}\[\];]                    // Delimitadores e símbolos ((), {}, [], ;)
+\/\/.*                             // Comentários de linha única (começa com // e vai até o final da linha)
+\/\*.*?\*\/                        // Bloco de comentários (começa com /* e termina com */)
+"(\\.|[^"\\])*"                    // Strings (cadeias de caracteres entre aspas duplas)
+'(\\.|[^'\\])'                     // Caractere único entre aspas simples
